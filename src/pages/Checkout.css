@@ -1,0 +1,60 @@
+header {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 12px 0;
+}
+
+.finish-bt {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(15, 107, 211);
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.finish-bt:hover {
+    transition: 0.2s;
+    background-color: rgb(17, 147, 223);
+    cursor: pointer;
+}
+
+.message-ok {
+    width: 100%;
+    padding: 8px 0;
+    background-color: rgb(218, 255, 181);
+    color: rgb(44, 88, 0);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.wrap-checkout {
+    width: 100%;
+    background-color: white;
+}
+
+@media screen and (min-width: 500px) {
+    .wrap-checkout {
+        border: 1px solid rgb(160, 183, 204);
+        border-radius: 10px;
+        width: 70%;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .finish-bt {
+        max-width: 500px;
+    }
+}
