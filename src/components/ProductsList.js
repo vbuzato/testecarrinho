@@ -27,6 +27,11 @@ export default function ProductsList({ cart }) {
               {' '}
               <span className="unit">/ un</span>
             </span>
+            <span className="quantity">
+              Quantidade:
+              {' '}
+              {item.quantity}
+            </span>
           </div>
         </div>
       ))}

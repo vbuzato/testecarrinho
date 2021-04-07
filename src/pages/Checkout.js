@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { FaOpencart } from 'react-icons/fa';
+import Loading from '../components/Loading';
 
 import fetchCart from '../api';
 import ProductsList from '../components/ProductsList';
@@ -65,8 +66,7 @@ function Checkout() {
             </div>
           </div>
         </div>
-      ) : 'Loading'}
-
+      ) : <Loading /> }
     </>
   );
 }
