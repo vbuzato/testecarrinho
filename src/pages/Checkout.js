@@ -18,7 +18,6 @@ function Checkout() {
     fetchCartData();
   }, [fetchCartData]);
 
-  console.log(cart);
   return (
     <div className="wrap-checkout">
       <header>Meu carrinho</header>

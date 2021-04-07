@@ -49,3 +49,8 @@
     font-weight: 500;
     font-size: 1em;
 }
+
+.unit {
+    font-size: 0.6em;
+    color: rgb(128, 128, 128);
+}

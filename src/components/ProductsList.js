@@ -22,6 +22,8 @@ export default function ProductsList({ cart }) {
               R$
               {' '}
               {formatPriceToShowIt(item.sellingPrice) }
+              {' '}
+              <span className="unit">/ un</span>
             </span>
           </div>
         </div>
