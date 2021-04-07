@@ -5,18 +5,20 @@ import './ProductsList.css';
 
 export default function ProductsList({ cart }) {
   return (
-    <div className="cards-container">
+    <>
       {cart && cart.map((item) => (
         <div key={item.uniqueId} className="card-checkout">
           <div className="container-img-checkout">
             <img src={item.imageUrl} alt={item.name} className="img-checkout" />
           </div>
           <div className="info-card-checkout">
-            <h2 className="product-title">{item.name}</h2>
+            <h2 className="product-title">{item.name.toUpperCase()}</h2>
             <span className="price line-through">
               R$
               {' '}
               {formatPriceToShowIt(item.price)}
+              {' '}
+              / un
             </span>
             <span className="priceWithDiscount">
               R$
@@ -25,10 +27,15 @@ export default function ProductsList({ cart }) {
               {' '}
               <span className="unit">/ un</span>
             </span>
+            <span className="quantity">
+              Quantidade:
+              {' '}
+              {item.quantity}
+            </span>
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }
 
