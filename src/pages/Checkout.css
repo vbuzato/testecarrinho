@@ -48,7 +48,6 @@ header {
   margin-top: 20px;
   font-size: 0.8em;
   font-family: 'Poppins';
-
 }
 
 .cart-total {
@@ -95,6 +94,14 @@ header {
   background-color: #3f1708;
 }
 
+.error-message {
+  margin: 0 10vw;
+  margin-top: 15vh;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: white;
+}
+
 @media screen and (min-width: 950px) {
   .wrap-checkout {
     margin: 0 auto;
@@ -120,6 +127,14 @@ header {
 
   .message-ok {
     font-size: 0.9em;
+  }
+
+  .error-message {
+    margin: 0 10vw;
+    margin-top: 40vh;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: white;
   }
 }
 

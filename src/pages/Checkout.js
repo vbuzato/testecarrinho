@@ -6,8 +6,9 @@ import fetchCart from '../api';
 import ProductsList from '../components/ProductsList';
 import formatPriceToShowIt from '../utils';
 import './Checkout.css';
+import OnApiError from '../components/OnApiError';
 
-function Checkout() {
+export default function Checkout() {
   const [cart, setCart] = useState();
   const valueToFreeShipping = 1000;
 
@@ -29,7 +30,7 @@ function Checkout() {
           Meu carrinho
         </h1>
       </header>
-      {cart ? (
+      {cart && !cart.errorMessage ? (
         <div className="wrap-checkout">
           <div className="column-checkout">
             <ProductsList cart={cart.data.items} />
@@ -66,9 +67,12 @@ function Checkout() {
             </div>
           </div>
         </div>
-      ) : <Loading /> }
+      )
+        : (
+          <>
+            {cart && 'errorMessage' in cart ? <div className="error-message"><OnApiError cart={cart} /></div> : <Loading /> }
+          </>
+        ) }
     </>
   );
 }
-
-export default Checkout;
