@@ -8,6 +8,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./img/choc-bghd.png') no-repeat center top;
+  background-size: contain;
   background-color: #F8E0E8;
 }
 

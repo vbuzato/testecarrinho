@@ -5,7 +5,7 @@ import './ProductsList.css';
 
 export default function ProductsList({ cart }) {
   return (
-    <div className="cards-container">
+    <>
       {cart && cart.map((item) => (
         <div key={item.uniqueId} className="card-checkout">
           <div className="container-img-checkout">
@@ -35,7 +35,7 @@ export default function ProductsList({ cart }) {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }
 

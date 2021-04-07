@@ -10,10 +10,6 @@
   border-bottom: 1px dashed rgba(117, 75, 40, 0.287);
 }
 
-.cards-container {
-  /* padding: 0 20px; */
-}
-
 .info-card-checkout {
   display: flex;
   justify-content: center;
@@ -33,7 +29,6 @@
   height: 110px;
   padding: 0 10px;
   margin-right: 20px;
-  /* border: 1px solid rgba(206, 193, 84, 0.281); */
   border-radius: 2px;
   background: url('../img/bg-yellow.png') no-repeat center;
   background-size: contain;
