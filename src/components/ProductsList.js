@@ -12,11 +12,13 @@ export default function ProductsList({ cart }) {
             <img src={item.imageUrl} alt={item.name} className="img-checkout" />
           </div>
           <div className="info-card-checkout">
-            <h2 className="product-title">{item.name}</h2>
+            <h2 className="product-title">{item.name.toUpperCase()}</h2>
             <span className="price line-through">
               R$
               {' '}
               {formatPriceToShowIt(item.price)}
+              {' '}
+              / un
             </span>
             <span className="priceWithDiscount">
               R$
